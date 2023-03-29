@@ -1,8 +1,10 @@
 1.19 Changelog
-0.0.1a2
+0.1.0a4
 ====
-- 0.0.1a2  Added Test Item and Test Item 2
+- Added recipes and mining data for tin
 
-0.0.1a
+0.1.0a
 =====
-- 0.0.1a1 - Mod Created
+- 0.1.0a3 - Added Tin Block, Tin Ore, and Tin Deepslate Ore
+- 0.1.0a2 - Added Test Item and Test Item 2
+- 0.1.0a1 - Mod Created

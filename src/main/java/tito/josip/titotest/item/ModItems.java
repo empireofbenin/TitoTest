@@ -11,14 +11,17 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, titotest.MOD_ID);
 
-    //creates test item
+    //Flint stuff
     public  static  final RegistryObject<Item> flint_hatchet = ITEMS.register("flint_hatchet",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.tito_test_tab)));
-
-   //creates test item2
     public  static  final RegistryObject<Item> flint_mattock = ITEMS.register("flint_mattock",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.tito_test_tab)));
 
+    //Tin stuff
+    public  static  final RegistryObject<Item> tin_ingot = ITEMS.register("tin_ingot",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.tito_test_tab)));
+    public  static  final RegistryObject<Item> raw_tin = ITEMS.register("raw_tin",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.tito_test_tab)));
     public static void register (IEventBus eventBus){
         ITEMS.register(eventBus);
     }

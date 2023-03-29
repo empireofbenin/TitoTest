@@ -1,6 +1,8 @@
 {
   "item.titotest.flint_hatchet": "Flint Hatchet",
   "item.titotest.flint_mattock": "Flint Mattock",
+  "item.titotest.tin_ingot": "Tin Ingot",
+  "item.titotest.raw_tin": "Raw Tin",
 
   "block.titotest.tin_block": "Block of Tin",
   "block.titotest.tin_ore": "Tin Ore",

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "titotest:deepslate_tin_ore",
+    "titotest:tin_ore",
+    "titotest:tin_block"
+  ]
+}
