@@ -1,12 +1,19 @@
 {
   "item.titotest.flint_hatchet": "Flint Hatchet",
-  "item.titotest.flint_mattock": "Flint Mattock",
+  "item.titotest.flint_chisel": "Flint Chisel",
+  "item.titotest.flint_spade": "Flint Spade",
+  "item.titotest.flint_hand_hoe": "Flint Hand Hoe",
+  "item.titotest.flint_knife": "Flint Knife",
+  "item.titotest.flint_sword": "Flint Sword",
   "item.titotest.tin_ingot": "Tin Ingot",
   "item.titotest.raw_tin": "Raw Tin",
+  "block.titotest.deepslate_tin_ore": "Deepslate Tin Ore",
+
 
   "block.titotest.tin_block": "Block of Tin",
   "block.titotest.tin_ore": "Tin Ore",
-  "block.titotest.deepslate_tin_ore": "Deepslate Tin Ore",
+
+  "block.titotest.eight_ball": "Eight Ball",
 
   "itemGroup.tito_test_tab": "Tito Test Tab"
 }
