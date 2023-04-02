@@ -1,0 +1,12 @@
+ {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "titotest:uranium_block_item"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "titotest:uranium_ingot"
+  }
+}

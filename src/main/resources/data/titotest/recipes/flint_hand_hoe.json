@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " ##",
+    " 1 ",
+    " 1 "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:flint"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "titotest:flint_hand_hoe"
+  }
+}

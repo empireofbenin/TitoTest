@@ -1,5 +1,8 @@
 {
   "replace": false,
   "values": [
+    "titotest:deepslate_uranium_ore",
+    "titotest:uranium_ore",
+    "titotest:uranium_block"
   ]
 }

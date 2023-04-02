@@ -1,10 +1,14 @@
 1.19 Changelog
-0.1.0a5
+0.1.0a6
 ====
-- Added stuff for flint tools and tutorial items
+- Added tutorial blocks
+- Added uranium blocks
+- Uranium blocks give wither effect when in inventory
+- Added crafting recipes for flint tools
 
 0.1.0a
 =====
+- 0.1.0a5 - Added stuff for flint tools and tutorial items
 - 0.1.0a4 - Added recipes and mining data for tin
 - 0.1.0a3 - Added Tin Block, Tin Ore, and Tin Deepslate Ore, test item 1 and 2 renamed to flint hatchet and flint chisel
 - 0.1.0a2 - Added Test Item and Test Item 2
