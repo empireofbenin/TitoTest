@@ -13,8 +13,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import tito.josip.titotest.block.custom.jumpy_block;
-import tito.josip.titotest.block.custom.uranium_block;
-import tito.josip.titotest.block.custom.uranium_ore_block;
 import tito.josip.titotest.item.ModCreativeModeTab;
 import tito.josip.titotest.item.ModItems;
 import tito.josip.titotest.titotest;
@@ -35,15 +33,6 @@ public class ModBlocks {
     //tutorial blocks
     public static final RegistryObject<Block> jumpy_block = registerBlock("jumpy_block",
             () -> new jumpy_block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.tito_test_tab);
-
-    //uranium blocks
-    public static final RegistryObject<Block> uranium_block = registerBlock("uranium_block",
-            () -> new uranium_block(BlockBehaviour.Properties.of(Material.METAL).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.tito_test_tab);
-    public static final RegistryObject<Block> deepslate_uranium_ore = registerBlock("deepslate_uranium_ore",
-            () -> new uranium_ore_block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)), ModCreativeModeTab.tito_test_tab);
-    public static final RegistryObject<Block> uranium_ore = registerBlock("uranium_ore",
-            () -> new uranium_ore_block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)), ModCreativeModeTab.tito_test_tab);
-
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

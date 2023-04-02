@@ -1,13 +1,16 @@
 1.19 Changelog
-0.1.0a6
+0.1.0a7
 ====
-- Added tutorial blocks
-- Added uranium blocks
-- Uranium blocks give wither effect when in inventory
-- Added crafting recipes for flint tools
+- Uranium now gives nausea in addition to wither
+- Added tooltips to indicate radioactive blocks
+- Added recipes for uranium and its derivative blocks
 
 0.1.0a
 =====
+- 0.1.0a6 - Added tutorial blocks
+          - Added uranium blocks
+          - Uranium blocks give wither effect when in inventory
+          - Added crafting recipes for flint tools
 - 0.1.0a5 - Added stuff for flint tools and tutorial items
 - 0.1.0a4 - Added recipes and mining data for tin
 - 0.1.0a3 - Added Tin Block, Tin Ore, and Tin Deepslate Ore, test item 1 and 2 renamed to flint hatchet and flint chisel

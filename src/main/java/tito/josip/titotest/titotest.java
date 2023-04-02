@@ -10,6 +10,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 import tito.josip.titotest.block.ModBlocks;
+import tito.josip.titotest.block.RadioactiveBlocks;
 import tito.josip.titotest.item.ModItems;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -26,6 +27,7 @@ public class titotest
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        RadioactiveBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

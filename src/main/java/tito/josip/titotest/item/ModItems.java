@@ -1,15 +1,12 @@
 package tito.josip.titotest.item;
 
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Item.Properties;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import tito.josip.titotest.block.ModBlocks;
 import tito.josip.titotest.item.custom.EightballItem;
-import tito.josip.titotest.item.custom.RadioactiveBlockItems;
 import tito.josip.titotest.item.custom.RadioactiveItem;
 import tito.josip.titotest.titotest;
 
@@ -42,12 +39,14 @@ public class ModItems {
             () -> new RadioactiveItem(new Properties().tab(ModCreativeModeTab.tito_test_tab)));
     public  static  final RegistryObject<Item> raw_uranium = ITEMS.register("raw_uranium",
             () -> new RadioactiveItem(new Properties().tab(ModCreativeModeTab.tito_test_tab)));
+    /*
     public static final RegistryObject<Item> uranium_block_item = ITEMS.register("uranium_block_item",
             () -> new RadioactiveBlockItems(ModBlocks.uranium_block.get(), new Properties()));
     public static final RegistryObject<Item> uranium_ore_item = ITEMS.register("uranium_ore_item",
             () -> new RadioactiveBlockItems(ModBlocks.uranium_ore.get(), new Properties()));
     public static final RegistryObject<Item> deepslate_uranium_ore_item = ITEMS.register("deepslate_uranium_ore_item",
             () -> new RadioactiveBlockItems(ModBlocks.deepslate_uranium_ore.get(), new Properties()));
+     */
 
 
     //Tutorial Items
