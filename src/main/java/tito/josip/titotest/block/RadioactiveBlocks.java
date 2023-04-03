@@ -23,12 +23,12 @@ public class RadioactiveBlocks {
     public static final DeferredRegister<Block> RADIOACTIVEBLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, titotest.MOD_ID);
 
-    public static final RegistryObject<Block> uranium_block = registerBlock("uranium_block",
-            () -> new uranium_block(BlockBehaviour.Properties.of(Material.METAL).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.tito_test_tab);
+    public static final RegistryObject<Block> URANIUM_BLOCK = registerBlock("uranium_block",
+            () -> new uranium_block(BlockBehaviour.Properties.of(Material.METAL).strength(6f).requiresCorrectToolForDrops().lightLevel(state -> state.getValue(uranium_block.LIT) ? 15 : 0)), ModCreativeModeTab.tito_test_tab);
     public static final RegistryObject<Block> deepslate_uranium_ore = registerBlock("deepslate_uranium_ore",
-            () -> new uranium_ore_block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)), ModCreativeModeTab.tito_test_tab);
+            () -> new uranium_ore_block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops().lightLevel(state -> state.getValue(uranium_ore_block.LIT) ? 7 : 0), UniformInt.of(3, 7)), ModCreativeModeTab.tito_test_tab);
     public static final RegistryObject<Block> uranium_ore = registerBlock("uranium_ore",
-            () -> new uranium_ore_block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops(), UniformInt.of(3, 7)), ModCreativeModeTab.tito_test_tab);
+            () -> new uranium_ore_block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops().lightLevel(state -> state.getValue(uranium_ore_block.LIT) ? 7 : 0), UniformInt.of(3, 7)), ModCreativeModeTab.tito_test_tab);
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn = RADIOACTIVEBLOCKS.register(name, block);

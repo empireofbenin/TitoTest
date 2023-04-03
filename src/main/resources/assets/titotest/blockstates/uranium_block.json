@@ -1,5 +1,6 @@
 {
   "variants": {
-    "": {"model": "titotest:block/uranium_block"}
+    "lit=true": {"model": "titotest:block/uranium_block_on"},
+    "lit=false": {"model": "titotest:block/uranium_block_off"}
   }
 }

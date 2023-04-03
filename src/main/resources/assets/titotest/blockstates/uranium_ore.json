@@ -1,5 +1,6 @@
 {
   "variants": {
-    "": {"model": "titotest:block/uranium_ore"}
+    "lit=true": {"model": "titotest:block/uranium_ore_on"},
+    "lit=false": {"model": "titotest:block/uranium_ore_off"}
   }
 }

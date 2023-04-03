@@ -1,5 +1,6 @@
 {
   "variants": {
-    "": {"model": "titotest:block/deepslate_uranium_ore"}
+    "lit=true": {"model": "titotest:block/deepslate_uranium_ore_on"},
+    "lit=false": {"model": "titotest:block/deepslate_uranium_ore_off"}
   }
 }

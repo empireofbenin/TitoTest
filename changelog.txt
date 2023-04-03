@@ -1,12 +1,13 @@
 1.19 Changelog
-0.1.0a7
+0.1.0a8
 ====
-- Uranium now gives nausea in addition to wither
-- Added tooltips to indicate radioactive blocks
-- Added recipes for uranium and its derivative blocks
+- Uranium blocks now light up and give radiation effects upon interaction, similar to redstone ore
 
 0.1.0a
 =====
+- 0.1.0a7 - Uranium now gives nausea in addition to wither
+          - Added tooltips to indicate radioactive blocks
+          - Added recipes for uranium and its derivative blocks
 - 0.1.0a6 - Added tutorial blocks
           - Added uranium blocks
           - Uranium blocks give wither effect when in inventory
