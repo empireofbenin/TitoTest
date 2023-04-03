@@ -19,6 +19,9 @@
 
   "block.titotest.eight_ball": "Eight Ball",
   "block.titotest.jumpy_block": "Jumpy_block",
+  "block.titotest.blueberry": "Blueberry",
+  "block.titotest.blueberry_seeds": "Blueberry Seeds",
+  "block.titotest.blueberry_crop": "Blueberry Crop",
 
   "itemGroup.tito_test_tab": "Tito Test Tab"
 }

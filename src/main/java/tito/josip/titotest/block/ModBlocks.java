@@ -5,6 +5,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -12,6 +13,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import tito.josip.titotest.block.custom.blueberry_crop_block;
 import tito.josip.titotest.block.custom.jumpy_block;
 import tito.josip.titotest.item.ModCreativeModeTab;
 import tito.josip.titotest.item.ModItems;
@@ -32,7 +34,11 @@ public class ModBlocks {
 
     //tutorial blocks
     public static final RegistryObject<Block> jumpy_block = registerBlock("jumpy_block",
-            () -> new jumpy_block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.tito_test_tab);
+            () -> new jumpy_block(BlockBehaviour.Properties.of(Material.MOSS).strength(6f)), ModCreativeModeTab.tito_test_tab);
+    public static final RegistryObject<Block> BLUEBERRY_CROP = BLOCKS.register("blueberry_crop",
+            () -> new blueberry_crop_block(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+
+
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

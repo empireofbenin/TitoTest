@@ -1,11 +1,14 @@
 package tito.josip.titotest.item;
 
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Item.Properties;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import tito.josip.titotest.block.ModBlocks;
 import tito.josip.titotest.item.custom.EightballItem;
 import tito.josip.titotest.item.custom.RadioactiveItem;
 import tito.josip.titotest.titotest;
@@ -39,19 +42,17 @@ public class ModItems {
             () -> new RadioactiveItem(new Properties().tab(ModCreativeModeTab.tito_test_tab)));
     public  static  final RegistryObject<Item> raw_uranium = ITEMS.register("raw_uranium",
             () -> new RadioactiveItem(new Properties().tab(ModCreativeModeTab.tito_test_tab)));
-    /*
-    public static final RegistryObject<Item> uranium_block_item = ITEMS.register("uranium_block_item",
-            () -> new RadioactiveBlockItems(ModBlocks.uranium_block.get(), new Properties()));
-    public static final RegistryObject<Item> uranium_ore_item = ITEMS.register("uranium_ore_item",
-            () -> new RadioactiveBlockItems(ModBlocks.uranium_ore.get(), new Properties()));
-    public static final RegistryObject<Item> deepslate_uranium_ore_item = ITEMS.register("deepslate_uranium_ore_item",
-            () -> new RadioactiveBlockItems(ModBlocks.deepslate_uranium_ore.get(), new Properties()));
-     */
-
 
     //Tutorial Items
     public  static  final RegistryObject<Item> eight_ball = ITEMS.register("eight_ball",
             () -> new EightballItem(new Properties().tab(ModCreativeModeTab.tito_test_tab).stacksTo(1)));
+    public  static  final RegistryObject<Item> BLUEBERRY_SEEDS = ITEMS.register("blueberry_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.BLUEBERRY_CROP.get(),
+                    new Properties().tab(ModCreativeModeTab.tito_test_tab)));
+    public  static  final RegistryObject<Item> BLUEBERRY = ITEMS.register("blueberry",
+            () -> new Item(new Properties().tab(ModCreativeModeTab.tito_test_tab).food(new FoodProperties.Builder().nutrition(2).saturationMod(2).build())));
+
+
 
     public static void register (IEventBus eventBus){
         ITEMS.register(eventBus);
